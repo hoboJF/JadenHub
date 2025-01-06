@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JadenHub Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="input-container">
+        <p>Enter your current grade:</p>
+        <input type="text" id="currentGrade" placeholder="(e.g. 85)">
+        <p>%</p>
+    </div>
+    <div class="input-container">
+        <p>Enter what you want in the class</p>
+        <input type="text" id="targetGrade" placeholder="(e.g. 70)">
+        <p>%</p>
+    </div>
+    <div class="input-container">
+        <p>Enter what your final is worth</p>
+        <input type="text" id="finalWeight" placeholder="(e.g. 20)">
+        <p>%</p>
+    </div>
+    <button onclick="calculate()">What do I need on the final?</button>
+    <script src="gradeCalculator.js">
+    </script>
+  </body>
+</html>
