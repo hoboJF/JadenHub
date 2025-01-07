@@ -7,9 +7,11 @@ const calculate = () => {
     finalWeight = parseFloat(finalWeight);
     if (isNaN(currentGrade) || isNaN(targetGrade) || isNaN(finalWeight)){
         alert("One or more inputs are invalid, please try again!");
+        return;
     }
     if(finalWeight > 100){
         alert("Final weight can't be above 100%!");
+        return;
     }
     finalGrade = (targetGrade - (currentGrade * (100 - finalWeight) / 100)) / (finalWeight / 100);
     alert(finalGrade);
