@@ -41,6 +41,11 @@ const showPopup = (message) => {
     const popupMessage = document.getElementById("popupMessage");
     popupMessage.textContent = message;
     popup.style.display = "flex";
+    popup.addEventListener('click', (event) => {
+        if (event.target === popup) {
+            closePopup();
+        }
+    });
 }
 const closePopup = () => {
     document.getElementById("popup").style.display = "none";
